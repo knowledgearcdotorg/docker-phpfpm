@@ -25,4 +25,4 @@ daemonize = false\n'\
 RUN mkdir /run/php
 
 EXPOSE 9000
-CMD ["/usr/sbin/php-fpm", "-F"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
