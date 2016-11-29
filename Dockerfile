@@ -27,4 +27,6 @@ daemonize = false\n'\
 
 RUN mkdir /run/php
 
+WORKDIR /var/www
+
 EXPOSE 9000
